@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" x-frame-options="sameorigin">
+<head>
+<meta charset="utf-8">
+<title>臺北捷運公司行動版網頁</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/png" href="favoricon.png">
+<link rel="stylesheet" href="css/font.css" />
+<link rel="stylesheet" href="css/style-l.css" />
+<link rel="stylesheet" href="css/style-m.css" media="only screen and (min-width:640px) and (max-width:970px)" />
+<link rel="stylesheet" href="css/style-s.css" media="only screen and (max-width:639px)" />
+<link rel="apple-touch-icon" href="img/Icon-57-iOS.png"> <!-- 57×57px -->
+<link rel="apple-touch-icon" sizes="72×72" href="img/Icon-72-iPad.png"> <!-- 72×72px ipad-->
+<link rel="apple-touch-icon" sizes="114×114" href="img/Icon-114-iOSRetina.png"> <!-- 114×114px iphone4-->
+<script type="text/javascript" src="js/metromobiletrace.js"></script>
+<style type="text/css">
+  a.holidayremark {
+    display: block;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f00 !important;
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+
+<body>
+<div id="container">
+  <div id="header">
+    <div id="site">
+      <h1><img src="img/logo_trtc.png" alt="臺北捷運公司Logo"></h1>
+    </div>
+    <div class="menu">
+      <a href="Default.asp">回首頁</a> | <a href="https://www.metro.taipei" target="_blank">電腦版</a>
+    </div>
+  </div>
+  <div id="content">
+  	<h2 class="color2"><img src="img/icon_roadmap.png" class="icon" border="0" /><span>路網圖、各站資訊及時刻表</span></h2>
+    <br>
+    
+      <div class="styled-select">
+          <form action ="station.asp" method="post">
+          <label for="station">請選擇車站或直接圖選：<label /><!--<span style="color:red">(高運量時刻表已公布於各車站，於本網頁請點選車站後開啟；中運量不提供時刻表。)</span>-->
+          <select name="id" id="sstation" onChange="submit();">
+          	<optgroup style='background-color: #CC9900;' label='BR 文湖線'><option style='background-color: #CC9900;' value='BR01-019'  >BR01 動物園</option><option style='background-color: #CC9900;' value='BR02-018'  >BR02 木柵</option><option style='background-color: #CC9900;' value='BR03-017'  >BR03 萬芳社區</option><option style='background-color: #CC9900;' value='BR04-016'  >BR04 萬芳醫院</option><option style='background-color: #CC9900;' value='BR05-015'  >BR05 辛亥</option><option style='background-color: #CC9900;' value='BR06-014'  >BR06 麟光</option><option style='background-color: #CC9900;' value='BR07-013'  >BR07 六張犁</option><option style='background-color: #CC9900;' value='BR08-012'  >BR08 科技大樓</option><option style='background-color: #CC9900;' value='BR09-011'  >BR09 大安</option><option style='background-color: #CC9900;' value='BR10-010'  >BR10 忠孝復興</option><option style='background-color: #CC9900;' value='BR11-009'  >BR11 南京復興</option><option style='background-color: #CC9900;' value='BR12-008'  >BR12 中山國中</option><option style='background-color: #CC9900;' value='BR13-007'  >BR13 松山機場</option><option style='background-color: #CC9900;' value='BR14-021'  >BR14 大直</option><option style='background-color: #CC9900;' value='BR15-022'  >BR15 劍南路</option><option style='background-color: #CC9900;' value='BR16-023'  >BR16 西湖</option><option style='background-color: #CC9900;' value='BR17-024'  >BR17 港墘</option><option style='background-color: #CC9900;' value='BR18-025'  >BR18 文德</option><option style='background-color: #CC9900;' value='BR19-026'  >BR19 內湖</option><option style='background-color: #CC9900;' value='BR20-027'  >BR20 大湖公園</option><option style='background-color: #CC9900;' value='BR21-028'  >BR21 葫洲</option><option style='background-color: #CC9900;' value='BR22-029'  >BR22 東湖</option><option style='background-color: #CC9900;' value='BR23-030'  >BR23 南港軟體園區</option><option style='background-color: #CC9900;' value='BR24-031'  >BR24 南港展覽館</option></optgroup><optgroup style='background-color: #FD5B56;' label='R 淡水信義線'><option style='background-color: #FD5B56;' value='R02-099'  >R02 象山</option><option style='background-color: #FD5B56;' value='R03-100'  >R03 台北101/世貿</option><option style='background-color: #FD5B56;' value='R04-101'  >R04 信義安和</option><option style='background-color: #FD5B56;' value='R05-011'  >R05 大安</option><option style='background-color: #FD5B56;' value='R06-103'  >R06 大安森林公園</option><option style='background-color: #FD5B56;' value='R07-134'  >R07 東門</option><option style='background-color: #FD5B56;' value='R08-042'  >R08 中正紀念堂</option><option style='background-color: #FD5B56;' value='R09-050'  >R09 台大醫院</option><option style='background-color: #FD5B56;' value='R10-051'  >R10 台北車站</option><option style='background-color: #FD5B56;' value='R11-053'  >R11 中山</option><option style='background-color: #FD5B56;' value='R12-054'  >R12 雙連</option><option style='background-color: #FD5B56;' value='R13-055'  >R13 民權西路</option><option style='background-color: #FD5B56;' value='R14-056'  >R14 圓山</option><option style='background-color: #FD5B56;' value='R15-057'  >R15 劍潭</option><option style='background-color: #FD5B56;' value='R16-058'  >R16 士林</option><option style='background-color: #FD5B56;' value='R17-059'  >R17 芝山</option><option style='background-color: #FD5B56;' value='R18-060'  >R18 明德</option><option style='background-color: #FD5B56;' value='R19-061'  >R19 石牌</option><option style='background-color: #FD5B56;' value='R20-062'  >R20 唭哩岸</option><option style='background-color: #FD5B56;' value='R21-063'  >R21 奇岩</option><option style='background-color: #FD5B56;' value='R22-064'  >R22 北投</option><option style='background-color: #FD5B56;' value='R22A-065'  >R22A 新北投</option><option style='background-color: #FD5B56;' value='R23-066'  >R23 復興崗</option><option style='background-color: #FD5B56;' value='R24-067'  >R24 忠義</option><option style='background-color: #FD5B56;' value='R25-068'  >R25 關渡</option><option style='background-color: #FD5B56;' value='R26-069'  >R26 竹圍</option><option style='background-color: #FD5B56;' value='R27-070'  >R27 紅樹林</option><option style='background-color: #FD5B56;' value='R28-071'  >R28 淡水</option></optgroup><optgroup style='background-color: #009900;' label='G 松山新店線'><option style='background-color: #009900;' value='G01-033'  >G01 新店</option><option style='background-color: #009900;' value='G02-034'  >G02 新店區公所</option><option style='background-color: #009900;' value='G03-035'  >G03 七張</option><option style='background-color: #009900;' value='G03A-032'  >G03A 小碧潭</option><option style='background-color: #009900;' value='G04-036'  >G04 大坪林</option><option style='background-color: #009900;' value='G05-037'  >G05 景美</option><option style='background-color: #009900;' value='G06-038'  >G06 萬隆</option><option style='background-color: #009900;' value='G07-039'  >G07 公館</option><option style='background-color: #009900;' value='G08-040'  >G08 台電大樓</option><option style='background-color: #009900;' value='G09-041'  >G09 古亭</option><option style='background-color: #009900;' value='G10-042'  >G10 中正紀念堂</option><option style='background-color: #009900;' value='G11-043'  >G11 小南門</option><option style='background-color: #009900;' value='G12-086'  >G12 西門</option><option style='background-color: #009900;' value='G13-105'  >G13 北門</option><option style='background-color: #009900;' value='G14-053'  >G14 中山</option><option style='background-color: #009900;' value='G15-132'  >G15 松江南京</option><option style='background-color: #009900;' value='G16-009'  >G16 南京復興</option><option style='background-color: #009900;' value='G17-109'  >G17 台北小巨蛋</option><option style='background-color: #009900;' value='G18-110'  >G18 南京三民</option><option style='background-color: #009900;' value='G19-111'  >G19 松山</option></optgroup><optgroup style='background-color: #FFCC66;' label='O 中和新蘆線'><option style='background-color: #FFCC66;' value='O01-048'  >O01 南勢角</option><option style='background-color: #FFCC66;' value='O02-047'  >O02 景安</option><option style='background-color: #FFCC66;' value='O03-046'  >O03 永安市場</option><option style='background-color: #FFCC66;' value='O04-045'  >O04 頂溪</option><option style='background-color: #FFCC66;' value='O05-041'  >O05 古亭</option><option style='background-color: #FFCC66;' value='O06-134'  >O06 東門</option><option style='background-color: #FFCC66;' value='O07-089'  >O07 忠孝新生</option><option style='background-color: #FFCC66;' value='O08-132'  >O08 松江南京</option><option style='background-color: #FFCC66;' value='O09-131'  >O09 行天宮</option><option style='background-color: #FFCC66;' value='O10-130'  >O10 中山國小</option><option style='background-color: #FFCC66;' value='O11-055'  >O11 民權西路</option><option style='background-color: #FFCC66;' value='O12-128'  >O12 大橋頭</option><option style='background-color: #FFCC66;' value='O13-127'  >O13 台北橋</option><option style='background-color: #FFCC66;' value='O14-126'  >O14 菜寮</option><option style='background-color: #FFCC66;' value='O15-125'  >O15 三重</option><option style='background-color: #FFCC66;' value='O16-124'  >O16 先嗇宮</option><option style='background-color: #FFCC66;' value='O17-123'  >O17 頭前庄</option><option style='background-color: #FFCC66;' value='O18-122'  >O18 新莊</option><option style='background-color: #FFCC66;' value='O19-121'  >O19 輔大</option><option style='background-color: #FFCC66;' value='O20-180'  >O20 丹鳳</option><option style='background-color: #FFCC66;' value='O21-179'  >O21 迴龍</option><option style='background-color: #FFCC66;' value='O50-178'  >O50 三重國小</option><option style='background-color: #FFCC66;' value='O51-177'  >O51 三和國中</option><option style='background-color: #FFCC66;' value='O52-176'  >O52 徐匯中學</option><option style='background-color: #FFCC66;' value='O53-175'  >O53 三民高中</option><option style='background-color: #FFCC66;' value='O54-174'  >O54 蘆洲</option></optgroup><optgroup style='background-color: #398AFC;' label='BL 板南線'><option style='background-color: #398AFC;' value='BL01-076'  >BL01 頂埔</option><option style='background-color: #398AFC;' value='BL02-077'  >BL02 永寧</option><option style='background-color: #398AFC;' value='BL03-078'  >BL03 土城</option><option style='background-color: #398AFC;' value='BL04-079'  >BL04 海山</option><option style='background-color: #398AFC;' value='BL05-080'  >BL05 亞東醫院</option><option style='background-color: #398AFC;' value='BL06-081'  >BL06 府中</option><option style='background-color: #398AFC;' value='BL07-082'  >BL07 板橋</option><option style='background-color: #398AFC;' value='BL08-083'  >BL08 新埔</option><option style='background-color: #398AFC;' value='BL09-084'  >BL09 江子翠</option><option style='background-color: #398AFC;' value='BL10-085'  >BL10 龍山寺</option><option style='background-color: #398AFC;' value='BL11-086'  >BL11 西門</option><option style='background-color: #398AFC;' value='BL12-051'  >BL12 台北車站</option><option style='background-color: #398AFC;' value='BL13-088'  >BL13 善導寺</option><option style='background-color: #398AFC;' value='BL14-089'  >BL14 忠孝新生</option><option style='background-color: #398AFC;' value='BL15-010'  >BL15 忠孝復興</option><option style='background-color: #398AFC;' value='BL16-091'  >BL16 忠孝敦化</option><option style='background-color: #398AFC;' value='BL17-092'  >BL17 國父紀念館</option><option style='background-color: #398AFC;' value='BL18-093'  >BL18 市政府</option><option style='background-color: #398AFC;' value='BL19-094'  >BL19 永春</option><option style='background-color: #398AFC;' value='BL20-095'  >BL20 後山埤</option><option style='background-color: #398AFC;' value='BL21-096'  >BL21 昆陽</option><option style='background-color: #398AFC;' value='BL22-097'  >BL22 南港</option><option style='background-color: #398AFC;' value='BL23-031'  >BL23 南港展覽館</option></optgroup><optgroup style='background-color: #ffdb00;' label='Y 環狀線'><option style='background-color: #ffdb00;' value='Y07-036'  >Y07 大坪林</option><option style='background-color: #ffdb00;' value='Y08-201'  >Y08 十四張</option><option style='background-color: #ffdb00;' value='Y09-202'  >Y09 秀朗橋</option><option style='background-color: #ffdb00;' value='Y10-203'  >Y10 景平</option><option style='background-color: #ffdb00;' value='Y11-047'  >Y11 景安</option><option style='background-color: #ffdb00;' value='Y12-205'  >Y12 中和</option><option style='background-color: #ffdb00;' value='Y13-206'  >Y13 橋和</option><option style='background-color: #ffdb00;' value='Y14-207'  >Y14 中原</option><option style='background-color: #ffdb00;' value='Y15-208'  >Y15 板新</option><option style='background-color: #ffdb00;' value='Y16-209'  >Y16 板橋</option><option style='background-color: #ffdb00;' value='Y17-210'  >Y17 新埔民生</option><option style='background-color: #ffdb00;' value='Y18-123'  >Y18 頭前庄</option><option style='background-color: #ffdb00;' value='Y19-212'  >Y19 幸福</option><option style='background-color: #ffdb00;' value='Y20-213'  >Y20 新北產業園區</option>
+          	</select>
+          <br />
+          </form>
+      </div>
+    <img src="img/routemap2020.png" alt="臺北捷運路網圖" class="roadmapimg" usemap="#FPMap1" border="0">
+    <map name="FPMap1">
+      <area shape="rect" coords="797,1036,862,1093" href="station.asp?ID=BR01-019"  alt="BR01 動物園" title="BR01 動物園">
+      <area shape="rect" coords="748,1035,793,1094" href="station.asp?ID=BR02-018"  alt="BR02 木柵" title="BR02 木柵">
+      <area shape="rect" coords="659,1027,745,1073" href="station.asp?ID=BR03-017"  alt="BR03 萬芳社區" title="BR03 萬芳社區">
+      <area shape="rect" coords="715,981,820,1022" href="station.asp?ID=BR04-016"  alt="BR04 萬芳醫院" title="BR04 萬芳醫院">
+      <area shape="rect" coords="714,934,808,971" href="station.asp?ID=BR05-015"  alt="BR05 辛亥" title="BR05 辛亥">
+      <area shape="rect" coords="666,903,710,960" href="station.asp?ID=BR06-014"  alt="BR06 麟光" title="BR06 麟光">
+      <area shape="rect" coords="609,902,662,960" href="station.asp?ID=BR07-013"  alt="BR07 六張犁" title="BR07 六張犁">
+      <area shape="poly" coords="523,880,607,880,607,920,547,920,547,910,523,910" href="station.asp?ID=BR08-012"  alt="BR08 科技大樓" title="BR08 科技大樓">
+      <area shape="rect" coords="573,806,640,865" href="station.asp?ID=R05 BR09-011"  alt="R05 BR09 大安" title="R05 BR09 大安">
+      <area shape="poly" coords="568,772,621,772,620,748,642,748,642,739,652,739,652,729,666,730,666,714,568,714" href="station.asp?ID=BL15 BR10-010"  alt="BL15 BR10 忠孝復興" title="BL15 BR10 忠孝復興">
+      <area shape="poly" coords="572,690,620,690,621,666,649,666,649,648,665,648,665,629,572,629" href="station.asp?ID=G16 BR11-009"  alt="G16 BR11 南京復興" title="G16 BR11 南京復興">
+      <area shape="rect" coords="577,591,682,628" href="station.asp?ID=BR12-008"  alt="BR12 中山國中" title="BR12 中山國中">
+      <area shape="rect" coords="561,549,686,586" href="station.asp?ID=BR13-007"  alt="BR13 松山機場" title="BR13 松山機場">
+      <area shape="rect" coords="573,504,641,541" href="station.asp?ID=BR14-021"  alt="BR14 大直" title="BR14 大直">
+      <area shape="rect" coords="556,424,618,492" href="station.asp?ID=BR15-022"  alt="BR15 劍南路" title="BR15 劍南路">
+      <area shape="rect" coords="627,423,671,491" href="station.asp?ID=BR16-023"  alt="BR16 西湖" title="BR16 西湖">
+      <area shape="rect" coords="676,423,724,492" href="station.asp?ID=BR17-024"  alt="BR17 港墘" title="BR17 港墘">
+      <area shape="rect" coords="728,422,770,492" href="station.asp?ID=BR18-025"  alt="BR18 文德" title="BR18 文德">
+      <area shape="rect" coords="773,422,818,493" href="station.asp?ID=BR19-026"  alt="BR19 內湖" title="BR19 內湖">
+      <area shape="rect" coords="820,422,881,492" href="station.asp?ID=BR20-027"  alt="BR20 大湖公園" title="BR20 大湖公園">
+      <area shape="rect" coords="882,422,929,492" href="station.asp?ID=BR21-028"  alt="BR21 葫洲" title="BR21 葫洲">
+      <area shape="rect" coords="828,504,923,538" href="station.asp?ID=BR22-029"  alt="BR22 東湖" title="BR22 東湖">
+      <area shape="rect" coords="786,550,922,588" href="station.asp?ID=BR23-030"  alt="BR23 南港軟體園區" title="BR23 南港軟體園區">
+      <area shape="rect" coords="800,594,955,651" href="station.asp?ID=BL23 BR24-031"  alt="BL23 BR24 南港展覽館" title="BL23 BR24 南港展覽館">
+      <area shape="rect" coords="90,80,172,116" href="station.asp?ID=R28-071"  alt="R28 淡水" title="R28 淡水">
+      <area shape="rect" coords="77,126,172,161" href="station.asp?ID=R27-070"  alt="R27 紅樹林" title="R27 紅樹林">
+      <area shape="rect" coords="91,177,171,209" href="station.asp?ID=R26-069"  alt="R26 竹圍" title="R26 竹圍">
+      <area shape="rect" coords="90,224,173,253" href="station.asp?ID=R25-068"  alt="R25 關渡" title="R25 關渡">
+      <area shape="rect" coords="161,253,196,314" href="station.asp?ID=R24-067"  alt="R24 忠義" title="R24 忠義">
+      <area shape="rect" coords="198,252,250,312" href="station.asp?ID=R23-066"  alt="R23 復興崗" title="R23 復興崗">
+      <area shape="rect" coords="251,252,292,312" href="station.asp?ID=R22-064"  alt="R22 北投" title="R22 北投">
+      <area shape="rect" coords="244,183,313,247" href="station.asp?ID=R22A-065"  alt="R22A 新北投" title="R22A 新北投">
+      <area shape="rect" coords="294,252,331,313" href="station.asp?ID=R21-063"  alt="R21 奇岩" title="R21 奇岩">
+      <area shape="rect" coords="332,252,381,314" href="station.asp?ID=R20-062"  alt="R20 唭哩岸" title="R20 唭哩岸">
+      <area shape="rect" coords="382,283,454,317" href="station.asp?ID=R19-061"  alt="R19 石牌" title="R19 石牌">
+      <area shape="rect" coords="382,326,456,362" href="station.asp?ID=R18-060"  alt="R18 明德" title="R18 明德">
+      <area shape="rect" coords="381,375,456,407" href="station.asp?ID=R17-059"  alt="R17 芝山" title="R17 芝山">
+      <area shape="rect" coords="381,417,457,450" href="station.asp?ID=R16-058"  alt="R16 士林" title="R16 士林">
+      <area shape="rect" coords="382,463,457,496" href="station.asp?ID=R15-057"  alt="R15 劍潭" title="R15 劍潭">
+      <area shape="rect" coords="381,506,458,539" href="station.asp?ID=R14-056"  alt="R14 圓山" title="R14 圓山">
+      <area shape="poly" coords="370,541,370,602,449,602,449,560,465,560,465,541" href="station.asp?ID=O11 R13-055"  alt="O11 R13 民權西路" title="O11 R13 民權西路">
+      <area shape="rect" coords="330,613,407,648" href="station.asp?ID=R12-054"  alt="R12 雙連" title="R12 雙連">
+      <area shape="poly" coords="371,691,457,691,457,639,408,639,407,660,371,660" href="station.asp?ID=G14 R11-053"  alt="G14 R11 中山" title="G14 R11 中山">
+      <area shape="poly" coords="370,694,464,694,464,746,421,746,421,774,370,774" href="station.asp?ID=BL12 R10-051"  alt="BL12 R10 台北車站" title="BL12 R10 台北車站">
+      <area shape="rect" coords="331,786,411,821" href="station.asp?ID=R09-050"  alt="R09 台大醫院" title="R09 台大醫院">
+      <area shape="poly" coords="356,833,356,888,335,888,335,914,419,914,419,833" href="station.asp?ID=G10 R08-042"  alt="G10 R08 中正紀念堂" title="G10 R08 中正紀念堂">
+      <area shape="rect" coords="435,805,511,864" href="station.asp?ID=R07 O06-134"  alt="R07 O06 東門" title="R07 O06 東門">
+      <area shape="rect" coords="512,795,570,864" href="station.asp?ID=R06-103"  alt="R06 大安森林公園" title="R06 大安森林公園">
+      <area shape="poly" coords="647,806,708,806,708,829,694,829,694,837,672,837,672,865,647,865" href="station.asp?ID=R04-101"  alt="R04 信義安和" title="R04 信義安和">
+      <area shape="poly" coords="701,832,701,859,677,859,677,896,753,896,753,862,726,862,727,832" href="station.asp?ID=R03-100"  alt="R03 台北101/世貿" title="R03 台北101/世貿">
+      <area shape="rect" coords="737,807,785,861" href="station.asp?ID=R02-099"  alt="R02 象山" title="R02 象山">
+      <area shape="rect" coords="556,1213,633,1243" href="station.asp?ID=G01-033"  alt="G01 新店" title="G01 新店">
+      <area shape="rect" coords="556,1167,670,1205" href="station.asp?ID=G02-034"  alt="G02 新店區公所" title="G02 新店區公所">
+      <area shape="rect" coords="557,1127,641,1161" href="station.asp?ID=G03-035"  alt="G03 七張" title="G03 七張">
+      <area shape="rect" coords="458,1127,548,1160" href="station.asp?ID=G03A-032"  alt="G03A 小碧潭" title="G03A 小碧潭">
+      <area shape="rect" coords="547,1070,638,1106" href="station.asp?ID=G04-036"  alt="G04 大坪林" title="G04 大坪林">
+      <area shape="rect" coords="545,1025,635,1059" href="station.asp?ID=G05-037"  alt="G05 景美" title="G05 景美">
+      <area shape="rect" coords="532,978,604,1018" href="station.asp?ID=G06-038"  alt="G06 萬隆" title="G06 萬隆">
+      <area shape="rect" coords="496,945,573,980" href="station.asp?ID=G07-039"  alt="G07 公館" title="G07 公館">
+      <area shape="poly" coords="466,915,545,915,545,931,560,931,560,943,493,943,493,949,466,949" href="station.asp?ID=G08-040"  alt="G08 台電大樓" title="G08 台電大樓">
+      <area shape="rect" coords="420,880,503,912" href="station.asp?ID=G09 O05-041"  alt="G09 O05 古亭" title="G09 O05 古亭">
+      <area shape="rect" coords="298,824,355,879" href="station.asp?ID=G11-043"  alt="G11 小南門" title="G11 小南門">
+      <area shape="rect" coords="262,725,348,776" href="station.asp?ID=BL11 G12-086"  alt="BL11 G12 西門" title="BL11 G12 西門">
+      <area shape="rect" coords="262,690,344,725" href="station.asp?ID=G13-105"  alt="G13 北門" title="G13 北門">
+      <area shape="rect" coords="471,631,570,693" href="station.asp?ID=G15 O08-132"  alt="G15 O08 松江南京" title="G15 O08 松江南京">
+      <area shape="poly" coords="673,689,673,663,651,663,652,670,625,670,625,712,698,712,698,689" href="station.asp?ID=G17-109"  alt="G17 台北小巨蛋" title="G17 台北小巨蛋">
+      <area shape="rect" coords="676,638,742,688" href="station.asp?ID=G18-110"  alt="G18 南京三民" title="G18 南京三民">
+      <area shape="rect" coords="743,638,790,689" href="station.asp?ID=G19-111"  alt="G19 松山" title="G19 松山">
+      <area shape="rect" coords="370,1073,444,1110" href="station.asp?ID=O01-048"  alt="O01 南勢角" title="O01 南勢角">
+      <area shape="poly" coords="426,1008,426,1064,358,1064,358,1019,391,1019,393,1008" href="station.asp?ID=O02-047"  alt="O02 景安" title="O02 景安">
+      <area shape="poly" coords="317,980,317,1016,390,1016,390,1006,398,1006,398,980" href="station.asp?ID=O03-046"  alt="O03 永安市場" title="O03 永安市場">
+      <area shape="rect" coords="330,936,405,971" href="station.asp?ID=O04-045"  alt="O04 頂溪" title="O04 頂溪">
+      <area shape="rect" coords="470,711,566,773" href="station.asp?ID=BL14 O07-089"  alt="BL14 O07 忠孝新生" title="BL14 O07 忠孝新生">
+      <area shape="rect" coords="476,598,573,630" href="station.asp?ID=O09-131"  alt="O09 行天宮" title="O09 行天宮">
+      <area shape="poly" coords="470,546,550,546,550,593,474,593,474,601,452,601,452,563,470,563" href="station.asp?ID=O10-130"  alt="O10 中山國小" title="O10 中山國小">
+      <area shape="rect" coords="312,550,365,602" href="station.asp?ID=O12-128"  alt="O12 大橋頭" title="O12 大橋頭">
+      <area shape="rect" coords="231,605,314,642" href="station.asp?ID=O13-127"  alt="O13 台北橋" title="O13 台北橋">
+      <area shape="rect" coords="199,644,268,681" href="station.asp?ID=O14-126"  alt="O14 菜寮" title="O14 菜寮">
+      <area shape="rect" coords="129,650,185,708" href="station.asp?ID=O15-125"  alt="O15 三重" title="O15 三重">
+      <area shape="rect" coords="71,713,154,748" href="station.asp?ID=O16-124"  alt="O16 先嗇宮" title="O16 先嗇宮">
+      <area shape="rect" coords="2,760,130,796" href="station.asp?ID=O17-123"  alt="O17 頭前庄" title="O17 頭前庄">
+      <area shape="rect" coords="16,811,102,848" href="station.asp?ID=O18-122"  alt="O18 新莊" title="O18 新莊">
+      <area shape="rect" coords="19,862,100,905" href="station.asp?ID=O19-121"  alt="O19 輔大" title="O19 輔大">
+      <area shape="rect" coords="19,909,101,944" href="station.asp?ID=O20-180"  alt="O20 丹鳳" title="O20 丹鳳">
+      <area shape="rect" coords="20,956,102,991" href="station.asp?ID=O21-179"  alt="O21 迴龍" title="O21 迴龍">
+      <area shape="poly" coords="233,523,353,523,353,548,289,548,289,569,233,569" href="station.asp?ID=O50-178"  alt="O50 三重國小" title="O50 三重國小">
+      <area shape="poly" coords="203,492,335,492,335,521,231,521,231,530,203,530" href="station.asp?ID=O51-177"  alt="O51 三和國中" title="O51 三和國中">
+      <area shape="rect" coords="174,450,318,487" href="station.asp?ID=O52-176"  alt="O52 徐匯中學" title="O52 徐匯中學">
+      <area shape="rect" coords="174,401,317,440" href="station.asp?ID=O53-175"  alt="O53 三民高中" title="O53 三民高中">
+      <area shape="rect" coords="173,354,275,386" href="station.asp?ID=O54-174"  alt="O54 蘆洲" title="O54 蘆洲">
+      <area shape="rect" coords="143,1174,224,1205" href="station.asp?ID=BL01-076"  alt="BL01 頂埔" title="BL01 頂埔">
+      <area shape="rect" coords="143,1127,224,1165" href="station.asp?ID=BL02-077"  alt="BL02 永寧" title="BL02 永寧">
+      <area shape="rect" coords="143,1082,225,1117" href="station.asp?ID=BL03-078"  alt="BL03 土城" title="BL03 土城">
+      <area shape="rect" coords="143,1037,225,1072" href="station.asp?ID=BL04-079"  alt="BL04 海山" title="BL04 海山">
+      <area shape="rect" coords="127,986,220,1033" href="station.asp?ID=BL05-080"  alt="BL05 亞東醫院" title="BL05 亞東醫院">
+      <area shape="rect" coords="138,940,222,978" href="station.asp?ID=BL06-081"  alt="BL06 府中" title="BL06 府中">
+      <area shape="rect" coords="116,889,212,927" href="station.asp?ID=BL07-082"  alt="BL07 板橋" title="BL07 板橋">
+      <area shape="rect" coords="186,840,244,875" href="station.asp?ID=BL08-083"  alt="BL08 新埔" title="BL08 新埔">
+      <area shape="rect" coords="181,788,263,826" href="station.asp?ID=BL09-084"  alt="BL09 江子翠" title="BL09 江子翠">
+      <area shape="rect" coords="158,724,255,778" href="station.asp?ID=BL10-085"  alt="BL10 龍山寺" title="BL10 龍山寺">
+      <area shape="poly" coords="414,775,414,796,488,796,488,773,466,773,466,748,424,748,424,775" href="station.asp?ID=BL13-088"  alt="BL13 善導寺" title="BL13 善導寺">
+      <area shape="poly" coords="616,772,616,797,695,797,695,770,678,770,678,745,644,745,644,772" href="station.asp?ID=BL16-091"  alt="BL16 忠孝敦化" title="BL16 忠孝敦化">
+      <area shape="poly" coords="673,714,747,714,747,769,680,769,680,732,673,732" href="station.asp?ID=BL17-092"  alt="BL17 國父紀念館" title="BL17 國父紀念館">
+      <area shape="poly" coords="749,745,794,745,794,797,730,797,730,771,749,771" href="station.asp?ID=BL18-093"  alt="BL18 市政府" title="BL18 市政府">
+      <area shape="rect" coords="797,745,841,799" href="station.asp?ID=BL19-094"  alt="BL19 永春" title="BL19 永春">
+      <area shape="rect" coords="842,744,893,800" href="station.asp?ID=BL20-095"  alt="BL20 後山埤" title="BL20 後山埤">
+      <area shape="rect" coords="843,705,917,741" href="station.asp?ID=BL21-096"  alt="BL21 昆陽" title="BL21 昆陽">
+      <area shape="rect" coords="494,1073,543,1127" href="station.asp?ID=Y08-201"  alt="Y08 十四張" title="Y08 十四張">
+      <area shape="poly" coords="470,1032,534,1032,533,1072,493,1072,493,1084,470,1084" href="station.asp?ID=Y09-202"  alt="Y09 秀朗橋" title="Y09 秀朗橋">
+      <area shape="rect" coords="428,1001,469,1065" href="station.asp?ID=Y10-203"  alt="Y10 景平" title="Y10 景平">
+      <area shape="rect" coords="842,654,935,697" href="station.asp?ID=BL22-097"  alt="BL22 南港" title="BL22 南港">
+      <area shape="rect" coords="301,1030,349,1087" href="station.asp?ID=Y12-205"  alt="Y12 中和" title="Y12 中和">
+      <area shape="rect" coords="247,1027,294,1089" href="station.asp?ID=Y13-206"  alt="Y13 橋和" title="Y13 橋和">
+      <area shape="rect" coords="249,975,317,1014" href="station.asp?ID=Y14-207"  alt="Y14 中原" title="Y14 中原">
+      <area shape="rect" coords="245,924,312,964" href="station.asp?ID=Y15-208"  alt="Y15 板新" title="Y15 板新">
+      <area shape="rect" coords="213,883,307,922" href="station.asp?ID=BL07-082"  alt="BL07 板橋" title="BL07 板橋">
+      <area shape="rect" coords="101,844,185,878" href="station.asp?ID=Y17-210"  alt="Y17 新埔民生" title="Y17 新埔民生">
+      <area shape="rect" coords="3,719,70,755" href="station.asp?ID=Y19-212"  alt="Y19 幸福" title="Y19 幸福">
+      <area shape="rect" coords="22,649,128,711" href="station.asp?ID=Y20-213"  alt="Y20 新北產業園區" title="Y20 新北產業園區">
+    </map>
+  </div>
+  <div id="footer">
+   	<p>24小時客服專線：02-218-12345<br />臺北市民當家熱線：1999 (外縣市02-27208889)</p> 	
+  	<small>&copy;臺北大眾捷運股份有限公司版權所有</small>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+<script>
+  $(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+  });
+</script>
+</body>
+</html>
